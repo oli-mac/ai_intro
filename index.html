@@ -518,11 +518,11 @@
         <div class = "row wow animate__animated animate__fadeInUp animate__slow">
           <div class = "contact-left">
             <h2>Send Message Here</h2>
-            <form>
-              <input type = "text" class = "form-control" placeholder="Name">
-              <input type = "email" class = "form-control" placeholder="Email">
-              <textarea placeholder="Message" rows = "6"></textarea>
-              <button type = "submit" class = "submit-btn">Send Now</button>
+            <form method="post">
+              <input type = "text" class = "form-control" placeholder="Name" id="name">
+              <input type = "email" class = "form-control" placeholder="Email" Id="email">
+              <textarea placeholder="Message" rows = "6" id="message"></textarea>
+              <button type = "submit" class = "submit-btn" id="btn">Send Now</button>
             </form>
           </div>
 
@@ -586,4 +586,7 @@
     <!-- custom js -->
     <script src="js/script.js" ></script>
   </body>
+    <script>
+      var btn = document.getElementById('btn');
+    </script>
 </html>
