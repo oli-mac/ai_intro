@@ -574,7 +574,8 @@
 
 
 
-
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
     <!-- jQuery -->
     <script src = "resources/jquery-3.5.1.js"></script>
     <!-- magnific popup -->
@@ -588,5 +589,24 @@
   </body>
     <script>
       var btn = document.getElementById('btn');
+      btn.addEventListener('click', function(e){
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var message = document.getElementById('message').value;
+        var body = 'name: '+ name +'<br/> email: ' + email +'<br/> message' + message; 
+          e.preventDefault();
+          Email.send({
+              Host : "smtp.gmail.com",
+              Username : "contactolyad@gmail.com",
+              Password : "gzlthdznjzwepryl",
+              To : 'contactolyad@gmail.com',
+              From : email,
+              Subject : "For Bit Ai and Cyber Security Center",
+              Body : body
+          }).then(
+            message => alert(message)
+          );
+      })
+      
     </script>
 </html>
