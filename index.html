@@ -518,10 +518,10 @@
         <div class = "row wow animate__animated animate__fadeInUp animate__slow">
           <div class = "contact-left">
             <h2>Send Message Here</h2>
-            <form method="post">
-              <input type = "text" class = "form-control" placeholder="Name" id="name">
-              <input type = "email" class = "form-control" placeholder="Email" Id="email">
-              <textarea placeholder="Message" rows = "6" id="message"></textarea>
+            <form action="https://formsubmit.io/send/contactolyad@gmail.com" method="post">
+              <input type = "text"  name="name" class = "form-control" placeholder="Name" id="name"  required>
+              <input type = "email"  name="email" class = "form-control" placeholder="Email" Id="email" required>
+              <textarea placeholder="Message"  name="message" rows = "6" id="message" required></textarea>
               <button type = "submit" class = "submit-btn" id="btn">Send Now</button>
             </form>
           </div>
@@ -577,8 +577,8 @@
 
 
 
-    <script src="https://smtpjs.com/v3/smtp.js">
-    </script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js">
+    </script> -->
     <!-- jQuery -->
     <script src = "resources/jquery-3.5.1.js"></script>
     <!-- magnific popup -->
@@ -590,7 +590,7 @@
     <!-- custom js -->
     <script src="js/script.js" ></script>
   </body>
-    <script>
+    <!-- <script>
       var btn = document.getElementById('btn');
       btn.addEventListener('click', function(e){
         var name = document.getElementById('name').value;
@@ -612,5 +612,5 @@
           );
       })
       
-    </script>
+    </script> -->
 </html>
