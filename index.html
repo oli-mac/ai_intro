@@ -65,12 +65,12 @@
       </nav>
 
       <div class = "hero-div center container">
-        <h1>we make your website stand out</h1>
-        <p class = "animate__animated animate__fadeInUp animate__slow">The best way to connect people with your brand.</p>
+        <h1>Use the power of technology to make a better world</h1>
+        <p class = "animate__animated animate__fadeInUp animate__slow">The face of the future come take part in creating the future.</p>
 
         <div class = "hero-btns animate__animated animate__fadeInUp animate__slow">
-          <button type = "button" class = "btn-trans">learn more</button>
-          <button type = "button" class = "btn-white">meet our people</button>
+          <button type = "button" class = "btn-trans"><a href = "#feature">learn more</a></button>
+          <button type = "button" class = "btn-white"><a href = "#contact">meet our people</a></button>
         </div>
       </div>
     </header>
@@ -565,6 +565,9 @@
           <a href = "#" class = "center">
             <i class = "fab fa-pinterest"></i>
           </a>
+          <a href = "#" class = "center">
+            <i class="fab fa-telegram"></i>
+          </a>
         </div>
       </div>
     </footer>
@@ -594,6 +597,7 @@
         var email = document.getElementById('email').value;
         var message = document.getElementById('message').value;
         var body = 'name: '+ name +'<br/> email: ' + email +'<br/> message' + message; 
+        console.log(body);
           e.preventDefault();
           Email.send({
               Host : "smtp.gmail.com",
