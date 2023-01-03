@@ -1,5 +1,5 @@
 :root{
-    --mount-meadow: #ff9a0d;
+    --mount-meadow: #035434;
     --white-smoke: #f0f0f0;
     --night-rider: #343434;
     --black: #191b17;
@@ -403,7 +403,7 @@ section{
 
 /* testimonial */
 .testimonial{
-    background-image: linear-gradient(rgba(52, 52, 52, 0.8), rgba(255, 154, 13, 0.6)), url(../assets/testimonial-bg.jpg);
+    background-image: linear-gradient(rgba(52, 52, 52, 0.8), rgba(3, 84, 52, 0.6)), url(../assets/testimonial-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
